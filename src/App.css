@@ -162,6 +162,10 @@ a {
   font-size: 17px;
 }
 
+.news_card a:hover {
+  color: var(--third-color);
+}
+
 .cardList {
   max-height: 550px;
   overflow: scroll;
