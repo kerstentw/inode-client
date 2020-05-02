@@ -87,7 +87,7 @@ body {
   display: flex;
   position:fixed;
   overflow: hidden;
-  
+
 }
 
 .side-bar-collapsed {
@@ -144,4 +144,37 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.news_card {
+  max-width: 250px;
+  margin-bottom: 20px;
+  max-height: 100px;
+  min-height: 80px;
+  text-overflow: ellipsis;
+  padding: 5px;
+  padding-top: 10px;
+  background-color: var(--secondary-color)
+}
+
+.news_card a {
+  color: white;
+  font-size: 17px;
+}
+
+.cardList {
+  max-height: 550px;
+  overflow: scroll;
+  padding: 5px;
+  max-width: 270px;
+  text-align: center;
+  align-items: center;
+  background-color: var(--first-color);
+  padding-top: 15px;
+  border: 5px solid var(--first-color);
+}
+
+.news-logo {
+  float: left;
+  height: 50px
 }

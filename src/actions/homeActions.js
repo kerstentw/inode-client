@@ -9,13 +9,13 @@ export function grabNetworkNews() {
   return function (dispatch) {
      axios.get(EXTERNAL_ENDPOINTS.GET_NETWORK_NEWS)
      .then((resp)=>{
-       alert(resp)
        dispatch(
          {
            type: GRAB_NETWORK_NEWS,
-           data: resp.data
+           data: resp.data.data
          })
      }).catch((err) => {
+       console.log(err);
        dispatch({
           type: REQUEST_ERROR,
           data: err

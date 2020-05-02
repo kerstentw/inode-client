@@ -6,9 +6,10 @@ import {
 export default function home(state= {}, action) {
   switch (action.type) {
     case GRAB_NETWORK_NEWS:
-      return state.news_data
+      return {...state, news_data: action.data}
     case REQUEST_ERROR:
-      alert("Request Error")
+      console.log("Request Error")
+      return state
     default:
       return state
   }
