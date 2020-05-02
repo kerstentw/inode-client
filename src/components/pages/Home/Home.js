@@ -7,7 +7,9 @@ class Home extends React.Component {
 
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      news_data: [{title: "No Articles Loaded", url:"/"}]
+    };
   }
 
   componentDidMount() {
@@ -16,7 +18,8 @@ class Home extends React.Component {
 
   render () {
     const { news_data } = this.props;
-    const placeholder = {title: "No Articles Loaded", url: "http://www.google.com"}
+    console.log("ND\n\n\n\n", news_data)
+
     //let articles = this.createListOfArticles();
     //console.log("A", articles)
 
@@ -26,11 +29,12 @@ class Home extends React.Component {
       <div>
       <h3> News & Announcements </h3>
       <div className="cardList">
-        <div> { news_data?
+        <div> {news_data && news_data.length > 3?
           news_data.slice(2).map((itm)=><NewsCard article={itm.data}/>)
           :
-          <NewsCard article={placeholder} />
-         } </div>
+          news_data.map((itm)=><NewsCard article={itm.data}/>)
+         }
+         </div>
         </div>
       </div>
       </div>
