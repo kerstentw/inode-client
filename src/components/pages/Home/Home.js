@@ -1,6 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { grabNetworkNews } from '../../../actions/homeActions';
+import {
+  grabNetworkNews,
+  grabLastBlocks
+ } from '../../../actions/homeActions';
 import NewsCard from '../../idiot_components/NewsCard';
 
 class Home extends React.Component {
@@ -14,11 +17,13 @@ class Home extends React.Component {
 
   componentDidMount() {
     this.props.grabNetworkNews();
+    this.props.grabLastBlocks();
   }
 
   render () {
     const { news_data } = this.props;
-    console.log("ND\n\n\n\n", news_data)
+    const { blocks } = this.props;
+    console.log("ND\n\n\n\n", blocks)
 
     //let articles = this.createListOfArticles();
     //console.log("A", articles)
@@ -44,13 +49,17 @@ class Home extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    news_data: state.home.news_data
+    news_data: state.home.news_data,
+    blocks: state.home.blocks
   }
 }
 
 const mapDispatchToProps = dispatch => ({
   grabNetworkNews: () => {
-      dispatch(grabNetworkNews());
+    dispatch(grabNetworkNews());
+  },
+  grabLastBlocks: () => {
+    dispatch(grabLastBlocks());
   }
 })
 

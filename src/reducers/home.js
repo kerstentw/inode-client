@@ -1,7 +1,9 @@
 import {
   GRAB_NETWORK_NEWS,
   REQUEST_ERROR,
-  NEWS_REQUEST
+  NEWS_REQUEST,
+  LATEST_BLOCKS_REQUEST,
+  GRAB_LATEST_BLOCKS
  } from '../actions/homeActions';
 
 export default function home(state= {}, action) {
@@ -13,6 +15,10 @@ export default function home(state= {}, action) {
     case REQUEST_ERROR:
       console.log("Request Error")
       return state
+    case LATEST_BLOCKS_REQUEST:
+      return {...state, blocks: [{is_loading: true}]}
+    case GRAB_LATEST_BLOCKS:
+      return {...state, blocks: action.data}
     default:
       return state
   }

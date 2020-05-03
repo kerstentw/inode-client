@@ -11,7 +11,8 @@ const EXTERNAL_ENDPOINTS = {
   PROPOSERS_SUMMARY: `${EXTERNAL_HOST.NODE_API}/proposers_summary`,
   GET_BLOCK_INFO: `${EXTERNAL_HOST.NODE_API}/get_block_info`,
   GET_TRANSACTION_INFO: `${EXTERNAL_HOST.NODE_API}/get_transaction_info`,
-  GET_NETWORK_NEWS: `${EXTERNAL_HOST.NODE_API}/get_network_news`
+  GET_NETWORK_NEWS: `${EXTERNAL_HOST.NODE_API}/get_network_news`,
+  GET_LATEST_BLOCKS: `${EXTERNAL_HOST.NODE_API}/get_block_range`
 }
 
 const ROUTE_ENDPOINTS = {
