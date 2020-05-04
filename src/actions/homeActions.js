@@ -10,6 +10,7 @@ export const LATEST_BLOCKS_REQUEST = 'LATEST_BLOCKS_REQUEST';
 export const GRAB_LATEST_BLOCKS = 'GRAB_LATEST_BLOCKS';
 
 export const PROPOSERS_SUMMARY = 'PROPOSERS_SUMMARY';
+export const TOKEN_SUMMARY = 'TOKEN_SUMMARY';
 
 export function grabNetworkNews() {
   return function (dispatch) {
@@ -64,6 +65,23 @@ export function grabProposersSummary() {
     .then((resp)=>{
       dispatch({
         type: PROPOSERS_SUMMARY,
+        data: resp.data
+      })
+    }).catch((err) => {
+      dispatch({
+         type: REQUEST_ERROR,
+         data: err
+      })
+    })
+  }
+}
+
+export function grabTokenSummary() {
+  return function (dispatch) {
+    axios.get(EXTERNAL_ENDPOINTS.GET_TOKEN_INFO)
+    .then((resp)=>{
+      dispatch({
+        type: TOKEN_SUMMARY,
         data: resp.data
       })
     }).catch((err) => {

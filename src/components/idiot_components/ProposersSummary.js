@@ -30,7 +30,7 @@ export default function ProposersSummary (props) {
 
 
   let props_data = packageData(props.data);
-  console.log("props_data", props_data)
+  //console.log("props_data", props_data)
 
 
   return (

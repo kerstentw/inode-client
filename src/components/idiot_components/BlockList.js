@@ -14,7 +14,7 @@ function BlockEntryRow(props) {
   let mapHeadersToData = (_key, _data)=> {
     // to-do: switch/case
 
-    console.log("HEAD DATA::: ",_data)
+    //console.log("HEAD DATA::: ",_data)
     if (_data.hash == "No Blocks Loaded") {
       return (
         <td>
@@ -22,7 +22,7 @@ function BlockEntryRow(props) {
         </td>
       )
     }
-    console.log("CUR_KEY:: ", _key)
+    //console.log("CUR_KEY:: ", _key)
 
     switch(_key){
       case "timestamp":

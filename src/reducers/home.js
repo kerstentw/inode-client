@@ -4,7 +4,8 @@ import {
   NEWS_REQUEST,
   LATEST_BLOCKS_REQUEST,
   GRAB_LATEST_BLOCKS,
-  PROPOSERS_SUMMARY
+  PROPOSERS_SUMMARY,
+  TOKEN_SUMMARY
  } from '../actions/homeActions';
 
 export default function home(state= {}, action) {
@@ -22,6 +23,8 @@ export default function home(state= {}, action) {
       return {...state, blocks: action.data.data}
     case PROPOSERS_SUMMARY:
       return {...state, proposers_summary: action.data.data }
+    case TOKEN_SUMMARY:
+      return {...state, token_summary: action.data.data}
     default:
       return state
   }

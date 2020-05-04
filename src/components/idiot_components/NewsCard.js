@@ -6,7 +6,7 @@ import loader_img from '../../static/Box-Loading-1.gif';
 export default function NewsCard(props) {
 
   let article = props.article;
-  console.log("ART", article)
+  //console.log("ART", article)
 
   return (
     <div className="news_card">

@@ -127,7 +127,7 @@ export default class HomePie extends PureComponent {
   }
 
   render() {
-    console.log("HP::: ", this.props)
+  //console.log("HP::: ", this.props)
 
     return (
       <div className="prop_container">
