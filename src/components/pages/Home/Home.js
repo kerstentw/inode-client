@@ -53,22 +53,24 @@ class Home extends React.Component {
           <ProposersSummary data={proposers_summary}/>
         </div>
 
-          <div className="news_ann_wrap">
-            <h2> News & Announcements </h2>
-            <div className="cardList">
-              <div> {news_data && news_data.length > 3?
-                news_data.slice(2).map((itm)=><NewsCard article={itm.data}/>)
-                :
-                news_data.map((itm)=><NewsCard article={itm.data}/>)
-               }
-              </div>
+        <div className="market_wrap">
+          <h2> Market Info </h2>
+          <MarketInfo data={token_summary}/>
+        </div>
+
+        <div className="news_ann_wrap">
+          <h2> News & Announcements </h2>
+          <div className="cardList">
+            <div> {news_data && news_data.length > 3?
+              news_data.slice(2).map((itm)=><NewsCard article={itm.data}/>)
+              :
+              news_data.map((itm)=><NewsCard article={itm.data}/>)
+             }
             </div>
           </div>
+        </div>
 
-          <div className="market_wrap">
-            <h2> Market Info </h2>
-            <MarketInfo data={token_summary}/>
-          </div>
+
         </div>
         <div className="bottom_section">
 

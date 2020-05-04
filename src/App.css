@@ -195,7 +195,7 @@ a {
   max-height: 512px;
   overflow: scroll;
   padding: 5px;
-  max-width: 350px;
+  max-width: 300px;
   width: 350px;
   text-align: center;
   align-items: center;
@@ -249,9 +249,10 @@ a {
   align-items: center;
   align-content: center;
   padding-bottom: 75px;
-  padding-right: 25px;
+  padding-right: inherit;
   max-width: 100%;
   overflow-x: hidden;
+  padding-left: inherit;
 }
 
 .top_section {
@@ -278,7 +279,7 @@ a {
   float:left;
   min-height: 512px;
   width: 350px;
-  margin-left: 25px;
+  margin-left: 15px;
 
 }
 .block_list_wrap {
@@ -311,7 +312,7 @@ a {
 .market_info_container {
 
   background-color: var(--sixth-color);
-  padding: 15px;
+  padding: 10px;
 
 }
 
@@ -320,6 +321,8 @@ a {
   max-height: 305px;
   overflow-x: hidden;
   overflow-y: scroll;
+  background-color: var(--first-color);
+  padding: 5px;
 }
 .primary_token_img {
   height: 25px;
@@ -341,6 +344,11 @@ a {
   padding-left: 20px;
   padding-top: 5px;
 }
+.token_list th{
+  background-color: var(--secondary-color);
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
 
 .token_list tr {
   align-items: center;
@@ -349,7 +357,8 @@ a {
 }
 
 .token_list tr:hover {
-  background-color: var(--first-color);
+  background-color: var(--secondary-color);
+  color: var(--third-color);
 }
 
 /* width */
