@@ -10,7 +10,8 @@ const initialState = {
   home: {
     news_data: [{data: {title: "No Articles Loaded", url:"/"}}],
     blocks: [{is_loading: true}],
-    block_list_headers: ["number", "hash", "timestamp","transaction_number","reward"]
+    block_list_headers: ["number", "hash", "timestamp","transaction_number","reward"],
+    proposers_summary: [{is_loading: true}]
   }
 }
 

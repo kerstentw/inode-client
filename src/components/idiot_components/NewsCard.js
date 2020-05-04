@@ -6,7 +6,7 @@ import loader_img from '../../static/Box-Loading-1.gif';
 export default function NewsCard(props) {
 
   let article = props.article;
-  console.log(article.preview)
+  console.log("ART", article)
 
   return (
     <div className="news_card">
@@ -18,6 +18,9 @@ export default function NewsCard(props) {
         </IconContext.Provider>
         <div>
         {article.title}
+        </div>
+        <div className="news_date_string">
+         {new Date(article.created_utc * 1000).toDateString()}
         </div>
       </a>
      </div>
