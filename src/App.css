@@ -192,7 +192,7 @@ a {
 }
 
 .cardList {
-  max-height: 512px;
+  max-height: 525px;
   overflow: scroll;
   padding: 5px;
   max-width: 300px;
@@ -318,7 +318,7 @@ a {
 
 .token_list {
   margin-top: 20px;
-  max-height: 305px;
+  max-height: 320px;
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: var(--first-color);
@@ -398,4 +398,55 @@ a {
 .extLink {
   color: white;
   height: 15px;
+}
+
+.misc-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.green-light {
+  border-radius: 100px;
+  height: 15px;
+  width: 15px;
+  background-color: green;
+  display: inline-block
+}
+
+.yellow-light {
+  border-radius: 100px;
+  height: 15px;
+  width: 15px;
+  background-color: yellow;
+  display: inline-block
+}
+
+.red-light {
+  border-radius: 100px;
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  display: inline-block
+}
+
+.stat_container {
+  padding: 5px;
+}
+
+.stat_button {
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 25px;
+  padding-right: 50px;
+  border: 1px solid white;
+  padding: 6px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 5px;
+  color: white;
+}
+
+.stat_button:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
 }

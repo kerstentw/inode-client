@@ -2,6 +2,9 @@ import React, { PureComponent } from 'react';
 import {
   PieChart, Pie, Sector, Cell, ResponsiveContainer
 } from 'recharts';
+import { ROUTE_ENDPOINTS } from '../../constants/endpoints';
+import { Link } from 'react-router-dom';
+
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
@@ -86,6 +89,11 @@ function DataView(props) {
       <a href={`https://scope.klaytn.com/account/${props.data.address}`} target="_blank">
         <text className="linkText" fill="#fff">view details</text>
       </a>
+      <div>
+        <Link to={ROUTE_ENDPOINTS.NETWORKS} className="misc-link">
+          More Network Info
+        </Link>
+      </div>
     </div>
   )
 }

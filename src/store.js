@@ -13,6 +13,9 @@ const initialState = {
     block_list_headers: ["number", "hash", "timestamp","transaction_number","reward"],
     proposers_summary: [{is_loading: true}],
     token_summary: {is_loading: true}
+  },
+  node_stat: {
+    is_node_up: "loading"
   }
 }
 

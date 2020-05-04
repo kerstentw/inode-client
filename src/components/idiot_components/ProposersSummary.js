@@ -42,6 +42,7 @@ export default function ProposersSummary (props) {
       :
         <img src={loader_img} className="news_loader"/>
       }
+
     </div>
   )
 }

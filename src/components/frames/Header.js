@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import  NodeStat  from '../smart_components/NodeStat';
 
 class Header extends React.Component {
 
@@ -15,6 +16,8 @@ class Header extends React.Component {
           <img className="image_logo" src={this.props.logo}/>
           Internode
         </Link>
+
+        <NodeStat />
       </header>
     )
   }
