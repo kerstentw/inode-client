@@ -13,8 +13,8 @@ class MainPage extends React.Component {
     return (
       <div>
         <Header logo={this.props.logo}/>
-          <SideBar className="col-md-3"/>
-          <MainView className="col-md-9"/>
+        <SideBar className="col-md-3"/>
+        <MainView className="col-md-9"/>
       </div>
     )
   }

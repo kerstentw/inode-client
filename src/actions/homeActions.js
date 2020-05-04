@@ -40,9 +40,6 @@ export function grabLastBlocks() {
   return function (dispatch) {
 
     // Starts Loader
-    dispatch({
-      type: LATEST_BLOCKS_REQUEST
-    });
 
     axios.get(EXTERNAL_ENDPOINTS.GET_LATEST_BLOCKS + "?start=latest&num_blocks=15")
     .then((resp) => {

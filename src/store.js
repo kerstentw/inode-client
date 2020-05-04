@@ -9,7 +9,8 @@ import rootReducer from './reducers/index';
 const initialState = {
   home: {
     news_data: [{data: {title: "No Articles Loaded", url:"/"}}],
-    blocks: [{number: -1, hash: "No Blocks Loaded"}]
+    blocks: [{is_loading: true}],
+    block_list_headers: ["number", "hash", "timestamp","transaction_number","reward"]
   }
 }
 

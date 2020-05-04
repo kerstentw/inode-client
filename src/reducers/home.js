@@ -18,7 +18,7 @@ export default function home(state= {}, action) {
     case LATEST_BLOCKS_REQUEST:
       return {...state, blocks: [{is_loading: true}]}
     case GRAB_LATEST_BLOCKS:
-      return {...state, blocks: action.data}
+      return {...state, blocks: action.data.data}
     default:
       return state
   }
