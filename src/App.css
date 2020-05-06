@@ -152,8 +152,8 @@ body {
   text-decoration: none;
 }
 
-.link-text: hover {
-
+.link-text:hover {
+  color: var(--third-color)
 }
 
 .link-icon {

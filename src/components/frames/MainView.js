@@ -7,7 +7,7 @@ import {
 import {
   DeFi,
   Networks,
-  WalletTracking,
+  AccountTracking,
   NodeManagement,
   Home
 } from '../pages';
@@ -27,7 +27,7 @@ class MainView extends React.Component {
             <Networks />
           </Route>
           <Route path={ROUTE_ENDPOINTS.WALLET_TRACKING}>
-            <WalletTracking />
+            <AccountTracking />
           </Route>
           <Route path={ROUTE_ENDPOINTS.NODE_MANAGEMENT}>
             <NodeManagement />
