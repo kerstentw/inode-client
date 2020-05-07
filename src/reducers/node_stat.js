@@ -8,10 +8,10 @@ export default function node_stat(state={}, action) {
   switch (action.type) {
 
     case NODE_INFO_REQUEST:
-      console.log("NODE STAT RED::: ", action)
+      console.log("NODE STAT RED::: ", action.data)
       return Object.assign({}, state, {
         ...state,
-        this_node_info: action.data
+        this_node_info: action.data.data
       });
 
     case PING_NODE_REQUEST:
