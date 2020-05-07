@@ -1,3 +1,23 @@
 .display_container {
+  background-color: var(--sixth-color);
+  padding: 25px;
+  display: inline-block;
+}
 
+
+.displayTable {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.displayTable tbody td {
+  border: 1px solid white;
+  padding: 4px;
+
+}
+
+.displayTable tbody th {
+  border: 1px solid white;
+  padding: 4px;
+  text-align: left;
 }
