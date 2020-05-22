@@ -16,12 +16,16 @@ class ManagementConsole extends React.Component {
 
 }
 
-const mapDispatchToProps = dispatch => {
-  return {}
+const mapDispatchToProps = (dispatch) => {
+  return {
+
+  }
 }
 
-const mapStateToProps = state => {
-  return {}
+const mapStateToProps = (state) => {
+  return {
+
+  }
 }
 
 export default  connect(mapStateToProps, mapDispatchToProps)(ManagementConsole);
