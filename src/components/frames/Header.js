@@ -2,6 +2,16 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import  NodeStat  from '../smart_components/NodeStat';
 
+function placeHolderClass(_props) {
+  return (
+    <select>
+      <option> 1 </option>
+      <option> 2 </option>
+      <option> 3 </option>
+    </select>
+  )
+}
+
 class Header extends React.Component {
 
   constructor(_props) {
@@ -16,7 +26,7 @@ class Header extends React.Component {
           <img className="image_logo" src={this.props.logo}/>
           Internode
         </Link>
-
+        <placeHolderClass />
         <NodeStat />
       </header>
     )
